@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+</head>
+<body>
+    <h3>Calculator </h3>
+    <script language="JavaScript">
+    
+    function addNum()
+    {
+     num1=parseInt(document.frmadd.txt1.value);
+     num2=parseInt(document.frmadd.txt2.value);
+     num3=num1+num2;
+     document.frmadd.txt3.value=num3;
+    }
+    function subNum()
+    {
+     num1=parseInt(document.frmadd.txt1.value);
+     num2=parseInt(document.frmadd.txt2.value);
+     num3=num1-num2;
+     document.frmadd.txt3.value=num3;
+    }
+    function mulNum()
+    {
+     num1=parseInt(document.frmadd.txt1.value);
+     num2=parseInt(document.frmadd.txt2.value);
+     num3=num1*num2;
+     document.frmadd.txt3.value=num3;
+    }
+    function divNum()
+    {
+     num1=parseInt(document.frmadd.txt1.value);
+     num2=parseInt(document.frmadd.txt2.value);
+     num3=num1/num2;
+     document.frmadd.txt3.value=num3;
+    }
+    </script></head><body>
+    <form name="frmadd">
+    
+     Num1<input type ="text" name="txt1" ><br>
+     Num2<input type ="text" name="txt2" ><br>
+     Result<input type ="text" name="txt3" disabled><br>
+     
+     <input type="button" value="+" name"but1" onClick="addNum()">
+     <input type="button" value="-" name"but2" onClick="subNum()">
+     <input type="button" value="x" name"but3" onClick="mulNum()">
+     <input type="button" value="/" name"but4" onClick="divNum()">
+    
+    </form>
+    
+</body>
+</html>
